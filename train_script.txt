@@ -1,0 +1,9 @@
+python train_fast.py     --data_root culane     --train_samples 40000     --val_samples 2000     --epochs 12     --batch_size 2     --use_amp     --num_workers 2     --save_dir ./checkpoints_overnight     --log_dir ./logs_overnight
+
+
+nvidia-smi -l 1 
+
+
+## save the predictions to a folder caluation_10hr.
+
+python evaluate.py --data_root "culane" --checkpoint "checkpoints_overnight\best_model.pth" --eval_samples 5000 --save_predictions --output_dir "evaluation_10hr"

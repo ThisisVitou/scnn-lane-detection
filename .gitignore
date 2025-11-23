@@ -1,0 +1,29 @@
+__pycache__/
+.venv/
+culane
+eval_results/
+checkpoints/
+laneseg_label_w16_test/
+logs/
+video_example/
+logs_overnight/
+
+checkpoints_overnight/
+
+# --- Evaluation 10hr ---
+# 1. Ignore everything in the main folder
+evaluation_10hr/*
+
+# 2. Keep the JSON file (This is in the main folder, so it works simply)
+!evaluation_10hr/evaluation_results.json
+
+# 3. Allow Git to enter the 'predictions' folder
+!evaluation_10hr/predictions/
+
+# 4. CRITICAL MISSING STEP: Ignore everything inside 'predictions' now that we entered it
+evaluation_10hr/predictions/*
+
+# 5. Finally, keep your specific images
+!evaluation_10hr/predictions/result_0000.png
+!evaluation_10hr/predictions/result_0001.png
+!evaluation_10hr/predictions/result_0020.png

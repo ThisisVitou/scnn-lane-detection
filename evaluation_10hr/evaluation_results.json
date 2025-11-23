@@ -1,0 +1,14 @@
+{
+    "checkpoint": "checkpoints_overnight\\best_model.pth",
+    "eval_samples": 5000,
+    "mIoU": 0.0369082077231352,
+    "pixel_acc": 0.9431797951388889,
+    "exist_acc": 0.8737,
+    "iou_per_class": {
+        "Background": 0.9432695754858412,
+        "Lane 1": 0.01683702795056274,
+        "Lane 2": 0.02985558829039015,
+        "Lane 3": 0.05290960710289001,
+        "Lane 4": 0.048030607548697916
+    }
+}
