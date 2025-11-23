@@ -46,6 +46,9 @@ This project implements lane detection using SCNN (Spatial Convolutional Neural 
 - CUDA 11.8 or 12.1
 - PyTorch 2.0+ with CUDA support
 
+### trained model
+I'll provide a link to google drive for existing model and evaluation. I can't upload anything over 100mb.
+
 ## 🚀 Installation
 
 ### 1. Clone the Repository
