@@ -5,7 +5,7 @@ A PyTorch implementation of Spatial CNN (SCNN) for lane detection on the CULane 
 **Author:** ThisisVitou  
 **Date:** 2025-11-23
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -17,7 +17,7 @@ A PyTorch implementation of Spatial CNN (SCNN) for lane detection on the CULane 
 - [Common Issues](#common-issues)
 - [Citation](#citation)
 
-## 🎯 Overview
+## Overview
 
 This project implements lane detection using SCNN (Spatial Convolutional Neural Network) trained on the CULane dataset. It includes:
 - Fast training script with GPU optimization
@@ -25,16 +25,16 @@ This project implements lane detection using SCNN (Spatial Convolutional Neural 
 - Real-time inference on images and videos
 - Support for RTX 3050 Ti and other NVIDIA GPUs
 
-## ✨ Features
+## Features
 
-- ✅ **GPU Auto-Detection**: Automatically selects NVIDIA GPU (avoids Intel integrated graphics)
-- ✅ **Mixed Precision Training (FP16)**: 2x faster training with lower memory usage
-- ✅ **Overnight Training Mode**: Optimized settings for long training runs
-- ✅ **Visual Predictions**: Save side-by-side comparison images
-- ✅ **Video Processing**: Process entire videos for lane detection
-- ✅ **TensorBoard Integration**: Monitor training progress in real-time
+- **GPU Auto-Detection**: Automatically selects NVIDIA GPU (avoids Intel integrated graphics)
+- **Mixed Precision Training (FP16)**: 2x faster training with lower memory usage
+- **Overnight Training Mode**: Optimized settings for long training runs
+- **Visual Predictions**: Save side-by-side comparison images
+- **Video Processing**: Process entire videos for lane detection
+- **TensorBoard Integration**: Monitor training progress in real-time
 
-## 📦 Requirements
+## Requirements
 
 ### Hardware
 - NVIDIA GPU with CUDA support (minimum 4GB VRAM)
@@ -49,7 +49,7 @@ This project implements lane detection using SCNN (Spatial Convolutional Neural 
 ### trained model
 I'll provide a link to google drive for existing model and evaluation. I can't upload anything over 100mb.
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -99,7 +99,7 @@ culane/
     └── ...
 ```
 
-## 🏃 Quick Start
+## Quick Start
 
 ### Training (Quick Test - 6 minutes)
 ```bash
@@ -153,7 +153,7 @@ python test.py \
   --output results/output_video.mp4
 ```
 
-## 📚 Documentation
+## Documentation
 
 Detailed documentation for each component:
 
@@ -162,7 +162,7 @@ Detailed documentation for each component:
 - **[TESTING.md](TESTING.md)** - Inference on images and videos
 - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Common issues and solutions
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 scnn-lane-detection/
@@ -183,7 +183,7 @@ scnn-lane-detection/
 └── culane/              # CULane dataset
 ```
 
-## ⚙️ Common Parameters
+## Common Parameters
 
 ### Training Parameters
 | Parameter | Default | Description |
@@ -215,7 +215,7 @@ scnn-lane-detection/
 | `--output` | ./test_results | Output directory |
 | `--show` | False | Display results in window |
 
-## 🔧 Common Issues
+## Common Issues
 
 ### CUDA Not Available
 ```bash
@@ -239,7 +239,7 @@ Use conservative settings:
 python train_fast.py --batch_size 8 --num_workers 1
 ```
 
-## 📊 Expected Results
+## Expected Results
 
 | Training Duration | Samples | Epochs | mIoU | Quality |
 |-------------------|---------|--------|------|---------|
@@ -248,7 +248,7 @@ python train_fast.py --batch_size 8 --num_workers 1
 | 10 hours | 80,000 | 24 | 0.55-0.60 | Excellent |
 | 30 hours | 88,880 | 50 | 0.60+ | Best |
 
-## 📈 Monitoring Training
+## Monitoring Training
 
 ### Using TensorBoard
 ```bash
@@ -262,7 +262,7 @@ Open: http://localhost:6006
 nvidia-smi -l 1
 ```
 
-## 🎓 Citation
+## Citation
 
 If you use this code, please cite:
 
@@ -275,15 +275,15 @@ If you use this code, please cite:
 }
 ```
 
-## 📝 License
+## License
 
 This project is for educational purposes. Please check the original SCNN and CULane licenses.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
-## 📧 Contact
+## Contact
 
 **Author:** ThisisVitou  
 **GitHub:** [@ThisisVitou](https://github.com/ThisisVitou)
